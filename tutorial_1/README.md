@@ -6,7 +6,7 @@ CMakeには、CMake-GUIというGUIでプロジェクトを出力する方法も
 CMakeコマンドでプロジェクトを出力するにはCMakeLists.txtを書きます  
 CMakeコマンドがルートディレクトリのCMakeLists.txtを解釈してプロジェクトを作成します  
 
-```cmake:tutorial_1/CMakeLists.txt
+```CMake:tutorial_1/CMakeLists.txt
 # CMakeの最低要求バージョンの定義
 cmake_minimum_required(VERSION 3.13)
 # プロジェクト名の定義
