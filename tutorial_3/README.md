@@ -1,6 +1,6 @@
 # チュートリアル３
 CMakeでの変数の使い方やデバッグプリントの仕方などについて解説していきます  
-今回は、冗長ですがCMakeの使い方を説明するため、四則演算の関数を全て別のファイルに分けています
+今回は、冗長ですがCMakeの使い方を説明するため、四則演算の関数を全て別のファイルに分けています  
 tutorial_3/CMakeLists.txtを開いてください  
 前回より少し複雑になっています  
 
@@ -73,6 +73,7 @@ endif()
 下記の例ではtutorial_3/srcフォルダの中のソースコードを変数`SOURCES`に代入しています  
 また、`*`はワイルドカード、`${CMAKE_CURRENT_SOURCE_DIR}`は予約語です  
 `${CMAKE_CURRENT_SOURCE_DIR}`は現在のCMakeLists.txtがあるディレクトリを指します  
+
 ```CMake
 file(GLOB_RECURSE SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c
