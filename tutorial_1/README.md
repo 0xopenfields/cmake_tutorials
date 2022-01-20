@@ -27,21 +27,21 @@ cmake -S tutorial_1 -B build
 cmake --build build
 ```
 
-1. `cmake -S tutorial_1 -B build`  
+1. `cmake -S tutorial_1 -B build/tutorial_1`  
     `-S tutorial_1`でソースコード(CMakeLists.txtのルート)を指定  
-    `-B build`で中間・出力ディレクトリを指定、buildフォルダが作成されます
+    `-B build/tutorial_1`で中間・出力ディレクトリを指定、build/tutorial_1フォルダが作成されます
 
-2. `cmake --build build`  
+2. `cmake --build build/tutorial_1`  
     `--build`はビルドコマンド  
-    `--build build`でbuildフォルダをビルドする  
+    `--build build/tutorial_1`でbuildフォルダをビルドする  
 
 ※CMake 3.12以前は以下のようにビルドしてました  
 
 ```
 cd cmake_tutorials
-mkdir build
-cd build
-cmake ../tutorial_1
+mkdir build/tutorial_1
+cd build/tutorial_1
+cmake ../../tutorial_1
 make
 ```
 
@@ -52,11 +52,17 @@ make
 - Windows
 
 ```
-build\Debug\cmake_tutorial_1.exe
+build\tutorial_1\Debug\cmake_tutorial_1.exe
 ```
 
 - Mac/Linux
 
 ```
-build/cmake_tutorial_1
+build/tutorial_1/cmake_tutorial_1
+```
+
+---
+出力結果
+```
+Hello, world.
 ```
